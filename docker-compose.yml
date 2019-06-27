@@ -6,7 +6,7 @@ services:
    image: mysql:latest
    command: --lower_case_table_names=1
    environment:
-     MYSQL_ROOT_PASSWORD: 'C0ke%Cane'
+     MYSQL_ROOT_PASSWORD: 'XXX'
    volumes:
      - /E/SP/docker/mysql/data:/var/lib/mysql
      - /E/SP/docker/mysql/config:/etc/mysql/conf.d
