@@ -1,0 +1,14 @@
+version: '2'
+services:
+ mysql:
+   container_name: flask_mysql
+   restart: always
+   image: mysql:latest
+   command: --lower_case_table_names=1
+   environment:
+     MYSQL_ROOT_PASSWORD: 'C0ke%Cane'
+   volumes:
+     - /E/SP/docker/mysql/data:/var/lib/mysql
+     - /E/SP/docker/mysql/config:/etc/mysql/conf.d
+   ports:
+     - "52000:3306"
