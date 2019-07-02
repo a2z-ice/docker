@@ -1,0 +1,2 @@
+ docker run --detach --name=mysql_5_7 --restart=always --volume=/E/SP/docker/mysql/config5:/etc/mysql/conf
+.d -p 52001:3306  --env="MYSQL_ROOT_PASSWORD=XXXXXX" mysql:5.7
