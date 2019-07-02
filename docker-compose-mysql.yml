@@ -8,7 +8,9 @@ services:
    environment:
      MYSQL_ROOT_PASSWORD: 'XXX'
    volumes:
+   # Mount mysql data
      - /E/SP/docker/mysql/data:/var/lib/mysql
+   # Mount mysql configuration
      - /E/SP/docker/mysql/config:/etc/mysql/conf.d
    ports:
      - "52000:3306"
