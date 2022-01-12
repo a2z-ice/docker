@@ -21,5 +21,12 @@ other_colomn_name_on_which_index_applied = value;
 
 ```
 
-" Set text width as 100.
-the possible_keys column indicates which indexes MySQL can choose from to find the rows in the table. If the column is null there is not releven indexes the column key is very important column. The key that MySQL actually decided to use. The possible_keys, was just an indication. However, the key column is the actual eky used to retrieve the results.
+The possible_keys column indicates which indexes MySQL can choose from to find the rows in the table. If the column is null there is not releven indexes the column key is very important column. The key that MySQL actually decided to use. The possible_keys, was just an indication. However, the key column is the actual eky used to retrieve the results.
+
+The column key_len indicates the length of the key that MySQL decided to use. 
+
+```
+# Drop index
+DROP Index index_name ON table_name;
+```
+
