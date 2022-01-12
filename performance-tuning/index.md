@@ -28,5 +28,18 @@ The column key_len indicates the length of the key that MySQL decided to use.
 ```
 # Drop index
 DROP Index index_name ON table_name;
+
+# FORCE INDEX enforce to use the index given in INDEX  parameter
+EXPLAIN SELECT column1, column2
+FROM table_name FORCE INDEX (index_name)
+WHERE
+column = ???
+
+# USE gives MySQL suggesation to use the index
+EXPLAIN SELECT column1, column2
+FROM table_name USE INDEX (index_name_1,index_name_2,index_name_n) 
+WHERE
+column = ???
+
 ```
 
